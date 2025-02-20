@@ -114,6 +114,7 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-bootstrap-views (1.1.0)
     drb (2.2.1)
     erubi (1.13.1)
     execjs (2.10.0)
@@ -338,6 +339,7 @@ DEPENDENCIES
   cssbundling-rails
   debug
   devise
+  devise-bootstrap-views
   jbuilder
   jsbundling-rails
   pg (~> 1.1)
@@ -383,6 +385,7 @@ CHECKSUMS
   date (3.4.1) sha256=bf268e14ef7158009bfeaec40b5fa3c7271906e88b196d958a89d4b408abe64f
   debug (1.10.0) sha256=11e28ca74875979e612444104f3972bd5ffb9e79179907d7ad46dba44bd2e7a4
   devise (4.9.4) sha256=920042fe5e704c548aa4eb65ebdd65980b83ffae67feb32c697206bfd975a7f8
+  devise-bootstrap-views (1.1.0) sha256=50a39af0656676eabea5d0eacfe74cb5016c25e20f38f333bfdac641f66d3335
   drb (2.2.1) sha256=e9d472bf785f558b96b25358bae115646da0dbfd45107ad858b0bc0d935cb340
   erubi (1.13.1) sha256=a082103b0885dbc5ecf1172fede897f9ebdb745a4b97a5e8dc63953db1ee4ad9
   execjs (2.10.0) sha256=6bcb8be8f0052ff9d370b65d1c080f2406656e150452a0abdb185a133048450d
