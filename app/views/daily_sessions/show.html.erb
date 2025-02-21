@@ -1,0 +1,9 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @daily_session %>
+
+<div>
+  <%= link_to "Edit this daily session", edit_active_day_daily_session_path(@active_day, @daily_session) %> |
+  <%= link_to "Back to active day", active_day_path(@active_day) %>
+
+</div>

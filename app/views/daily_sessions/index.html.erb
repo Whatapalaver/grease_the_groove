@@ -1,0 +1,12 @@
+<% content_for :title, "Daily sessions" %>
+
+<h1>Daily sessions</h1>
+
+<div id="daily_sessions">
+  <% @daily_sessions.each do |daily_session| %>
+    <%= render daily_session %>
+
+  <% end %>
+</div>
+
+<%= link_to "New daily session", new_active_day_daily_session_path(active_day_id: @active_day.id) %>

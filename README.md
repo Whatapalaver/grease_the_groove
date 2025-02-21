@@ -1,24 +1,8 @@
-# README
+# Grease the Groove
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A tracker for Movement Snacks or for recording Grease the Groove sessions if like me, you are inspired by Pavel Tsatsouline.
 
-Things you may want to cover:
+It was started as a solo hackdays project to give me an opportunity to see what turbo is all about. Haven't got that far yet though.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- bundle install
+- bin/dev

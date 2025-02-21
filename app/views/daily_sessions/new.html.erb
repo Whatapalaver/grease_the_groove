@@ -1,0 +1,12 @@
+<% content_for :title, "New daily session" %>
+
+<h1>New daily session</h1>
+<%= form_with(model: @daily_session, url: active_day_daily_sessions_path(@daily_session.active_day)) do |form| %>
+  <%= render :partial => "form", :locals => { :form => form, :daily_session => @daily_session } %>
+<% end %>
+
+<br>
+
+<div>
+  <%= link_to "Back to active day", active_day_path(@active_day) %>
+</div>
