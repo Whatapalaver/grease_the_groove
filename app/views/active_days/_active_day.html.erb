@@ -1,0 +1,15 @@
+<div id="<%= dom_id active_day %>">
+
+  <p>
+    <strong>Day:</strong>
+    <%= active_day.day %>
+  </p>
+
+  <div class="row">
+    <% active_day.daily_sessions.order(position: :asc).each do |session| %>
+      <%= render 'daily_sessions/daily_session', daily_session: session %>
+    <% end %>
+    <%= link_to "Add new daily session", new_active_day_daily_session_path(active_day_id: active_day.id) %>
+  </div>
+
+</div>

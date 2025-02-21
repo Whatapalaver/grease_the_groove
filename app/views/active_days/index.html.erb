@@ -1,0 +1,10 @@
+<h2>Successfully Greasing the Goove for <%= @active_days.count %> days</h2>
+<div class="d-flex flex-row flex-wrap mb-3 gap-2">
+   <% @active_days.each do |active_day| %>
+    <div class="card p-2">
+      <%= link_to active_day.day, active_day_path(active_day) %>
+    </div>
+  <% end %>
+</div>
+
+ <%= link_to "Add new active day", new_active_day_path %>

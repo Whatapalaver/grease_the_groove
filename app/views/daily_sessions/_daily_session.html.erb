@@ -1,0 +1,15 @@
+<div id="<%= dom_id daily_session %>" class="container border border-primary-subtle rounded p-3 mb-3">
+  <p>
+    <strong>Name:</strong>
+    <%= daily_session.name %>
+  </p>
+  <p>
+    <%= daily_session.notes %>
+  </p>
+  <% if @active_day %>
+    <div class="row gap-2">
+      <%= button_to 'Edit', edit_active_day_daily_session_path(@active_day, daily_session), method: :get, class: 'btn btn-secondary btn-sm' %>
+      <%= button_to 'Destroy', active_day_daily_session_path(@active_day, daily_session), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-warning btn-sm' %>
+    </div>
+  <% end %>
+</div>

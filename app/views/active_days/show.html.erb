@@ -1,0 +1,10 @@
+<%= render @active_day %>
+
+<div>
+  <%= link_to "Edit this active day", edit_active_day_path(@active_day) %> |
+  <%= link_to "Back to active days", active_days_path %>
+</div>
+
+<div>
+  <%= link_to "Delete this active day", active_day_path(@active_day), data: { turbo_method: :delete } %>
+</div>

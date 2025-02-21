@@ -1,0 +1,25 @@
+  <% if daily_session.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(daily_session.errors.count, "error") %> prohibited this daily_session from being saved:</h2>
+
+      <ul>
+        <% daily_session.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :notes, style: "display: block" %>
+    <%= form.text_field :notes %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>

@@ -1,0 +1,12 @@
+<% content_for :title, "Editing active day" %>
+
+<h1>Editing active day</h1>
+
+<%= render "form", active_day: @active_day %>
+
+<br>
+
+<div>
+  <%= link_to "Show this active day", @active_day %> |
+  <%= link_to "Back to active days", active_days_path %>
+</div>

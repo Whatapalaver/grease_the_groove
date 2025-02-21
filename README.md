@@ -1,24 +1,19 @@
-# README
+# Grease the Groove
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A tracker for Movement Snacks or for recording Grease the Groove sessions if like me, you are inspired by Pavel Tsatsouline.
 
-Things you may want to cover:
+It was started as a solo hackdays project to give me an opportunity to see what turbo is all about. Haven't got that far yet though.
 
-* Ruby version
+## Plan
 
-* System dependencies
+- create an active_day, then within that create a session that you can then add exercises and record reps/weight
+- allow creation of user defined exercises as well some pre-prepared examples
+- sessions and exercises to be draggable
+- on the homepage show a github style heat map for active_days, colour density according to session count or volume
 
-* Configuration
+![heatmap](public/heatmap.png)
 
-* Database creation
+## To run
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- bundle install
+- bin/dev
